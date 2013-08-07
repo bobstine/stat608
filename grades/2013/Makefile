@@ -20,7 +20,7 @@ process_grades: $(path)/process_grades.cc
 	cd $(path); make process_grades; cd -; cp $(path)/process_grades .
 
 
-student_scores.txt: st349001.dat process_grades
-	./process_grades -f st349001.dat -o $@ --name-column 0 --id-column 29 --multiple-versions --questions 45 --answer-column 45 --build-indicators > summary.report
+student_scores.txt: ws217001.dat process_grades
+	./process_grades -f ws217001.dat -o $@ --name-column 0 --id-column 29 --multiple-versions --questions 44 --answer-column 45 --build-indicators > summary.report
 
 ################
